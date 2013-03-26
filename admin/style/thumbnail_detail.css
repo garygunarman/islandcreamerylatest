@@ -1,0 +1,32 @@
+#menus_menu {
+	color:#ffffff;
+	background-color:#292929;
+}
+.image_row {
+	width:100%;
+	margin-bottom:10px;
+}
+/*
+.image_preview {
+	float:left;
+	width:25px;
+	margin-right:28px;
+	min-height:25px;
+	-webkit-box-shadow: 0px 0px 0px 4px #ffffff, 0px 0px 0px 5px #cccccc;
+	-moz-box-shadow: 0px 0px 0px 4px #ffffff, 0px 0px 0px 5px #cccccc;
+	box-shadow: 0px 0px 0px 4px #ffffff, 0px 0px 0px 5px #cccccc;
+	background-color:#f0f0f0;
+	background-image:url("../../files/web_images/camera.png");
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.the_image_preview {
+	width:20px;
+	float:left;
+	margin-right:5px;
+}
+
+.form_6_auto {
+	margin-left:315px;
+}
+*/

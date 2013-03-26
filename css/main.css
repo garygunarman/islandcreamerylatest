@@ -1,0 +1,1183 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html, button, input, select, textarea {
+	color: #222;
+}
+html{
+	width:100%;
+	height:100%;
+}
+body {
+	font-size: 1em;
+	line-height: 1.4;
+	width:100%;
+	height:100%;
+	-webkit-transform:translate3d(0,0,0);
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+ background: #b3d4fc;
+ text-shadow: none;
+}
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+	vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+
+input, textarea, select {
+	-webkit-font-smoothing:antialiased;
+}
+input {
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box;
+	box-sizing:content-box-box;
+}
+.form-stacked {
+	padding-left:0;
+}
+.form-stacked label {
+	padding-bottom:4px;
+}
+.field-set .field {
+	clear: both;
+	margin-bottom: 5px;
+	position: relative;
+}
+.field-set .field label {
+	clear: left;
+	float: left;
+	padding-top: 6px;
+	width: 100px; /* optional */
+	font-family: 'solexbold';
+	text-transform: uppercase;
+	margin-left: 60px;
+}
+.field-set .field .input-text, .field-set .field .input-password, .field-set .field textarea, .field-set .field select {
+	width:400px; /* optional */
+}
+.field-set .field-checkbox {
+	padding:7px 0 0 25px;
+}
+.field-set .field-checkbox label {
+	float: none;
+}
+.field-set .field-checkbox .input-checkbox {
+	position: absolute;
+	top: 9px;
+	left: 0;
+}
+.field-set .input-file div {
+	float: left;
+	margin-top: 0px;
+}
+.field-set .file-button {
+	background: #ccc;
+	padding: 5px 7px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0 0 1px 0 rgba(255,255,255,0.5);
+	-moz-box-shadow: 0 0 1px 0 rgba(255,255,255,0.5);
+	-o-box-shadow: 0 0 1px 0 rgba(255,255,255,0.5);
+	box-shadow: 0 0 1px 0 rgba(255,255,255,0.5);
+	cursor: pointer;
+}
+.field-set .file-button:hover {
+	background: #aaa;
+}
+.field-set .file-button:active {
+	background: #999;
+}
+.field-set .input-file #file-text {
+	margin-left: 10px;
+	margin-top: 6px;
+	color: #999;
+}
+.field-set .field-date .date-select-date, .field-set .field-date .date-select-month, .field-set .field-date .date-select-year {
+	padding-right: 30px;
+	width: auto;
+}
+label a {
+	color:#1f84b5; /* blue */
+}
+.field-set-stacked .field label {
+	color: #9e9e9e; /* grey */
+	clear: both;
+	display: block;
+	font-size: 85%;
+	float: none;
+	width: auto;
+	margin: 0 0 7px;
+}
+.input-text, .input-password, textarea, select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid #ccc;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #666;
+	font: 1em 'solexregular', "Helvetica Neue", Arial, Helvetica, sans-serif;
+	resize: none;
+	padding: 5px 7px;
+	background: rgba(255,255,255,0.5);
+}
+.input-text:focus, .input-password:focus, textarea:focus, select:focus {
+	outline: none;
+	border: 1px solid #b20838;
+	transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+}
+.input-text.large, .input-password.large, textarea.large, select.large {
+	font-size: 15px;
+	padding: 7px 8px;
+}
+.input-text.submit, .input-password.submit, textarea.submit, select.submit {
+	background:#fff url(/static/images/form-submit-disclosure.png) no-repeat 100% 50%;
+	padding-right:32px;
+}
+/* .click-target {
+    cursor: pointer;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 33px;
+    height: 33px;
+} */
+
+.input-select {
+	background:url(../img/select-arrow.png) no-repeat 100% 50%;
+	width:100%;
+}
+.input-submit {
+	background: #981f2d;
+	border: none;
+	color: #fff;
+	font: 1em 'solexbold', "Helvetica Neue", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	margin: 5px 0 15px;
+	padding: 6px 16px;
+	outline: none;
+	transition: background .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 1px 0px 0px #771722;
+	box-shadow: 0px 1px 0px 0px #771722;
+}
+.input-submit:hover {
+	background: #b72536;
+}
+.input-submit.small {
+	font-size:13px;
+	padding:6px 14px 8px;
+}
+.input-submit.danger {
+	background:#af0707;
+ background-image:linear-gradient(bottom, #af07070, #ce1b1b100%);
+	border:1px solid #7d0a0a;
+}
+.input-submit.danger:hover {
+ background-image:linear-gradient(bottom, #af0707100%, #ce1b1b0);
+}
+/* Alert Message */
+
+.alert-message {
+	position:relative;
+	margin-bottom:18px;
+	color:#404040;
+	background-color:#eedc94;
+	background-repeat:repeat-x;
+	background-image:linear-gradient(top, #fceec1, #eedc94);
+	text-shadow:0 1px 0 rgba(255,255,255,0.5);
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.25);
+	-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.25);
+	-o-box-shadow:inset 0 1px 0 rgba(255,255,255,0.25);
+	box-shadow:inset 0 1px 0 rgba(255,255,255,0.25);
+	border-style:solid;
+	border-width:1px;
+	padding:7px 15px;
+}
+.alert-message.danger, .alert-message.error {
+	color:#fff;
+	background-color:#c43c35;
+	background-repeat:repeat-x;
+	background-image:linear-gradient(top, #ee5f5b, #c43c35);
+}
+.alert-message.success {
+	color:#fff;
+	background-color:#57a957;
+	background-repeat:repeat-x;
+	background-image:linear-gradient(top, #62c462, #57a957);
+}
+.alert-message.info {
+	color:#fff;
+	background-color:#339bb9;
+	background-repeat:repeat-x;
+	background-image:linear-gradient(top, #5bc0de, #339bb9);
+}
+#yourBtn {
+	position: relative;
+	top: 150px;
+	font-family: calibri;
+	width: 150px;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px dashed #BBB;
+	text-align: center;
+	background-color: #DDD;
+	cursor:pointer;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.background {
+	background: no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+
+body#menus {
+	background: url(../img/background-menu.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body#about {
+	background: url(../img/background-about.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body#locations {
+	background: url(../img/background-location.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body#contact {
+	background: url(../img/background-contact.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+header {
+	width: 100%;
+	background: #fff;
+	height: 150px;
+	opacity: 0.9;
+}
+header #top {
+	height: 118px;
+	background: url(../img/checkers-red.png) repeat-x center;
+}
+header #top .header-container {
+	width: 960px;
+	margin: auto;
+}
+header .logo {
+	width: 110px;
+	height: 118px;
+	padding: 0 20px;
+	margin: auto;
+	background: url(../img/island-creamery-logo.jpg) no-repeat center;
+}
+header .logo-home {
+	width: 115px;
+	height: 50px;
+	background: url(../img/island-creamery-home-small.png) no-repeat center;
+	margin: auto;
+}
+header #mid {
+	background: #000;
+}
+header #mid div {
+	font-family: 'solexbold_italic';
+	font-size: 1.1em;
+	color: #fff;
+	width: 960px;
+	margin: auto;
+	text-align: center;
+	height: 32px;
+	line-height: 32px;
+}
+nav {
+	font-family: 'clarendonbold';
+	font-size: 0.825em;
+	width: 100%;
+	height: 32px;
+	background: #981f2d;
+	-webkit-box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	-o-box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	z-index:10;
+	position:relative;
+}
+nav #nav-container {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+nav ul {
+	width: 565px;
+	margin: auto;
+	padding: 0;
+}
+nav ul li {
+	display: inline;
+	margin:0;
+}
+
+nav a {
+	float: left;
+	text-decoration: none;
+	line-height: 32px;
+	color: #fff;
+	padding: 0 25px;
+	margin: 0;
+	background: #981f2d;
+	border-left: 1px dashed #fff;
+	transition: background .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out;
+}
+nav a:hover {
+	background: #7d1a25;
+}
+
+nav a.selected {
+	background: #7d1a25;
+}
+
+footer {
+	font-family: 'solexregular';
+	font-size: 1em;
+	line-height: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+	height: 30px;
+	text-shadow: 0px 0px 5px #999999;
+	filter: dropshadow(color=#999999, offx=0, offy=0);
+}
+footer .footer-content {
+	width: 960px;
+	margin: auto;
+	text-align: center;
+}
+footer a {
+	text-decoration: none;
+	color: #fff;
+	transition: color .25s ease-in-out;
+	-moz-transition: color .25s ease-in-out;
+	-webkit-transition: color .25s ease-in-out;
+}
+footer a:hover {
+	color: #981f2d;
+}
+footer li {
+	display: inline;
+	list-style: none;
+	padding: 0 10px;
+}
+.main-content-container {
+	width: 960px;
+	margin: auto;
+}
+.main-content {
+	width: 800px;
+	margin: auto;
+}
+.main-content-red {
+	width:800px;
+	margin: auto;
+	background: #981f2d url(../img/divider.png) repeat-x;
+	background-position: 5px;
+	opacity: 0.8;
+	height: 100px;
+	z-index: 1;
+	margin-top: 20px;
+}
+
+/* home */
+
+footer#footer-home {
+	font-family: 'solexbold';
+	text-transform: uppercase;
+	position: fixed;
+	bottom: 0;
+}
+.home-content {
+	width: 320px;
+	height: 250px;
+	margin: 150px auto 150px auto;
+	background: url(../img/island-creamery-home.png) no-repeat center top;
+}
+.arrow {
+	cursor: pointer;
+	height: 60px;
+	width: 60px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+	opacity:0.8; /* other browsers  and IE9+ */
+	filter: alpha(opacity=80); /* IE6+ */
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80); /* IE6+ */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=80)"; /* this works in IE8 only */
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	z-index:10;
+	position:relative;
+}
+.arrow:hover {
+	opacity:1; /* other browsers  and IE9+ */
+	filter: alpha(opacity=100); /* IE6+ */
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100); /* IE6+ */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=100)"; /* this works in IE8 only */
+}
+.arrow.left {
+	background: #fff url(../img/arrow-left_2.png) no-repeat center;
+	float: left;
+	margin: 180px 0
+}
+.arrow.right {
+	background: #fff url(../img/arrow-right_2.png) no-repeat center;
+	float: right;
+	margin: 180px 0
+}
+/* .home-content ul {
+    list-style-type: none;
+    padding-top: 270px;
+}
+
+.home-content li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.home-content li.ice-cream {
+    height: 80px;
+    width: 80px;
+    background: url(../img/icon_ice-cream.png) no-repeat center;
+}
+
+.home-content li.burger {
+    height: 80px;
+    width: 80px;
+    background: url(../img/icon_burger.png) no-repeat center;
+}
+
+.home-content li.dessert {
+    background: url(../img/icon_dessert.png) no-repeat center;
+} */
+
+#footer-home {
+	width: 100%;
+	height: 100px;
+	background: rgba(152,31,45,0.8) url(../img/divider.png) repeat-x top;
+	background-position: 0 10px;
+	margin:0;
+	text-shadow: 0px 0px 0px #999999;
+	filter: dropshadow(color=#999999, offx=0, offy=0);
+	color: #fff;
+}
+.footer-content-home {
+	margin: auto;
+	width: 960px;
+}
+.twitter {
+	width: 405px;
+	float: left;
+	padding-top: 43px;
+}
+.twitter a, .twitter div {
+	float:right;
+}
+.twitter iframe {
+	padding-top:6px;
+}
+.twitter-container {
+	width: 212px;
+	margin-right: 23px;
+}
+.fb {
+	float: left;
+	width: 385px;
+	padding-top: 43px;
+	padding-left: 170px;
+}
+.fb div {
+	margin-right: 20px;
+	float: left;
+}
+.fb iframe {
+	padding-top:5px;
+	float: left;
+}
+.footer-logo {
+	background: url(../img/island-creamery-home_150.png) no-repeat;
+	float: left;
+	width: 150px;
+	height: 250px;
+	position: absolute;
+	margin-left: 405px;
+	bottom: -90px;
+}
+/* menus */
+
+.main-content#menus .menu-banner, .main-content#menus .menu-content {
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	margin-top: 20px;
+}
+.menu-banner {
+	width: 800px;
+	background: url(../img/menu-banner-bg.png);
+	height: 320px;
+}
+.menu-banner .content {
+	width: 780px;
+	height: 280px;
+	padding: 10px 10px 0 10px;
+	float: left;
+}
+.menu-banner .content .image {
+	width: 580px;
+	float: left;
+	position:relative;
+}
+#image_front {
+}
+#image_back {
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+}
+.menu-banner .content .text {
+	width: 160px;
+	height: 240px;
+	padding: 20px;
+	background: #000;
+	float: left;
+	text-align: center;
+}
+.menu-banner .text .text-title {
+	font-family: 'solexbold';
+	font-size: 1.5em;
+	line-height: 1em;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.menu-banner .text .text-content {
+	font-family: 'solexmedium_italic';
+	font-size: 0.825em;
+	color: #fff;
+}
+.menu-banner .image-selector {
+	height: 20px;
+	padding: 4px 10px 5px 10px;
+}
+.menu-banner .image-selector a {
+	background: url(../img/selector-grey.png) no-repeat center;
+	height: 11px;
+	width: 11px;
+	margin: 9px 5px 10px 0px;
+	float: left;
+	transition: background .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out;
+}
+.menu-banner .image-selector a:hover {
+	background: url(../img/selector-red.png) no-repeat center;
+}
+.menu-banner .image-selector a.selected {
+	background: url(../img/selector-red.png) no-repeat center;
+}
+.menu-content .header {
+	font-family: 'clarendonbook';
+	height: 40px;
+	background:#981f2d;
+	line-height: 40px;
+	color: #fff;
+	padding-left: 10px;
+	text-align: center;
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	-o-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+}
+.menu-content .header h1 {
+	font-size: 1.1em;
+}
+.menu-content .content {
+	padding: 20px;
+	background: rgba(255,255,255,0.9);
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	-o-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+}
+.menu-content .content .product {
+	width: 152px;
+	height: 142px;
+	overflow: hidden;
+	float: left;
+}
+.menu-content .content .product img {
+	transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	
+}
+.menu-content .content .product img:hover {
+	
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	-ms-transform: scale(1.2);
+ filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=2, M12=-0, M21=0, M22=2);
+}
+.menu-content .content .product .product-desc {
+	font-family: 'solexbold';
+	text-align: center;
+	text-transform: uppercase;
+}
+.menu-content .content .description {
+	font-family: 'solexregular';
+	text-align: justify;
+	padding: 20px;
+}
+/* Locations */
+
+.locations-header {
+	font-family: 'clarendonbook';
+	height: 40px;
+	background: rgba(255,255,255,0.9);
+	line-height: 40px;
+	color: #fff;
+	padding-left: 10px;
+}
+.locations-content {
+	margin-top: 20px;
+	padding: 50px 40px 20px 40px;
+	background: rgba(152,31,45,0.9) url(../img/divider.png) repeat-x;
+	background-position: 0 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.location {
+	width: 100%;
+}
+.locations-content .description {
+	margin-bottom: 20px;
+}
+.location .map {
+	width: 160px;
+	height: 160px;
+	background: url(../uploads/locations/branch_gw_160.png) no-repeat center;
+	float: left;
+}
+.location .map .view-map {
+	font-family: 'solexbold';
+	text-align: center;
+	font-size: .825em;
+	line-height: 14px;
+	padding-top: 10px;
+	height: 40px;
+	width: 50px;
+	background: #333;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	transition: background .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out;
+}
+.location .map .view-map:hover {
+	background: #981f2d;
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.location .map a {
+	color: #fff;
+	text-decoration: none;
+}
+.location .address {
+	float: left;
+	color: #fff;
+	height: 200px;
+	width: 520px;
+	padding-left: 40px;
+}
+.location .address .address-header {
+	font-family: 'solexmedium';
+	font-size: 1.25em;
+	text-transform: uppercase;
+	border-bottom: 1px dashed #fff;
+	padding-bottom: 10px;
+}
+.location .address .address-content {
+	padding-top: 10px;
+	font-family: 'solexregular';
+	font-size: 1em;
+}
+.location .address .address-content span {
+	font-family: 'solexbold';
+}
+/* Contact */
+
+.contact-content {
+	font-family: 'solexregular';
+	background: rgba(255,255,255,0.85) url(../img/divider-red.png) repeat-x;
+	background-position: 0 10px;
+	padding: 60px 40px 40px 40px;
+	margin-top: 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.contact-content label {
+	color: #981f2d;
+}
+.contact-content .contact-words {
+	text-align: center;
+	width: 500px;
+	margin: 0 auto 35px auto;
+}
+.contact-content .contact-words a {
+	color: #981f2d;
+	font-family: 'solexbold';
+	text-decoration: none
+}
+.contact-content .input-submit {
+	float: right;
+	margin-right: 60px;
+}
+.contact-content p {
+	font-family: 'solexregular_italic';
+	color: #981f2d;
+	float: right;
+	line-height: 45px;
+	margin: 0;
+	margin-right: 20px;
+}
+.contact-content p  {
+    color: #222;
+	line-height: 25px;
+	float: inherit;
+}
+/* About */
+
+.about-content {
+	font-family: 'solexregular';
+	background: rgba(255,255,255,0.85) url(../img/divider-red.png) repeat-x;
+	background-position: 0 10px;
+	padding: 60px 40px 40px 40px;
+	margin-top: 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.about-logo {
+	height: 87px;
+	width: 200px;
+	background: url(../img/island-creamery-about.png) no-repeat center;
+	margin: auto;
+}
+
+.about-header {
+	color: #981f2d;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'solexbold', Helvetica, Arial, sans-serif;
+	margin-bottom: 30px;
+}
+
+.about-content {
+	margin-top: 40px;
+}
+.about-content p {
+    color: #222;
+	line-height: 25px;
+	float: inherit
+}
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+	font-family: 'solexregular_italic';
+	src: url('../fonts/solexregularitalic-webfont.eot');
+	src: url('../fonts/solexregularitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/solexregularitalic-webfont.woff') format('woff'), url('../fonts/solexregularitalic-webfont.ttf') format('truetype'), url('../fonts/solexregularitalic-webfont.svg#solexregular_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'solexregular';
+	src: url('../fonts/solexregular-webfont.eot');
+	src: url('../fonts/solexregular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/solexregular-webfont.woff') format('woff'), url('../fonts/solexregular-webfont.ttf') format('truetype'), url('../fonts/solexregular-webfont.svg#solexregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'solexmedium_italic';
+	src: url('../fonts/solexmediumitalic-webfont.eot');
+	src: url('../fonts/solexmediumitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/solexmediumitalic-webfont.woff') format('woff'), url('../fonts/solexmediumitalic-webfont.ttf') format('truetype'), url('../fonts/solexmediumitalic-webfont.svg#solexmedium_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'solexmedium';
+	src: url('../fonts/solexmedium-webfont.eot');
+	src: url('../fonts/solexmedium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/solexmedium-webfont.woff') format('woff'), url('../fonts/solexmedium-webfont.ttf') format('truetype'), url('../fonts/solexmedium-webfont.svg#solexmedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'solexbold_italic';
+	src: url('../fonts/solexbolditalic-webfont.eot');
+	src: url('../fonts/solexbolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/solexbolditalic-webfont.woff') format('woff'), url('../fonts/solexbolditalic-webfont.ttf') format('truetype'), url('../fonts/solexbolditalic-webfont.svg#solexbold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'solexbold';
+	src: url('../fonts/solexbold-webfont.eot');
+	src: url('../fonts/solexbold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/solexbold-webfont.woff') format('woff'), url('../fonts/solexbold-webfont.ttf') format('truetype'), url('../fonts/solexbold-webfont.svg#solexbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'clarendon_extendedbold';
+	src: url('../fonts/clarendonextended_bold-webfont.eot');
+	src: url('../fonts/clarendonextended_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/clarendonextended_bold-webfont.woff') format('woff'), url('../fonts/clarendonextended_bold-webfont.ttf') format('truetype'), url('../fonts/clarendonextended_bold-webfont.svg#clarendon_extendedbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'clarendonbt_romancondensed';
+	src: url('../fonts/clarendonbt_romancondensed-webfont.eot');
+	src: url('../fonts/clarendonbt_romancondensed-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/clarendonbt_romancondensed-webfont.woff') format('woff'), url('../fonts/clarendonbt_romancondensed-webfont.ttf') format('truetype'), url('../fonts/clarendonbt_romancondensed-webfont.svg#webfontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'clarendonbt_roman';
+	src: url('../fonts/clarendonbt_roman-webfont.eot');
+	src: url('../fonts/clarendonbt_roman-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/clarendonbt_roman-webfont.woff') format('woff'), url('../fonts/clarendonbt_roman-webfont.ttf') format('truetype'), url('../fonts/clarendonbt_roman-webfont.svg#webfontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'claredon_light';
+	src: url('../fonts/clarendonbt_light-webfont.eot');
+	src: url('../fonts/clarendonbt_light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/clarendonbt_light-webfont.woff') format('woff'), url('../fonts/clarendonbt_light-webfont.ttf') format('truetype'), url('../fonts/clarendonbt_light-webfont.svg#webfontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'claredon_heavy';
+	src: url('../fonts/clarendonbt_heavy-webfont.eot');
+	src: url('../fonts/clarendonbt_heavy-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/clarendonbt_heavy-webfont.woff') format('woff'), url('../fonts/clarendonbt_heavy-webfont.ttf') format('truetype'), url('../fonts/clarendonbt_heavy-webfont.svg#webfontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'claredon_boldcondensed';
+	src: url('../fonts/clarendonbt_boldcondensed-webfont.eot');
+	src: url('../fonts/clarendonbt_boldcondensed-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/clarendonbt_boldcondensed-webfont.woff') format('woff'), url('../fonts/clarendonbt_boldcondensed-webfont.ttf') format('truetype'), url('../fonts/clarendonbt_boldcondensed-webfont.svg#webfontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'clarendon_condensedbold';
+	src: url('../fonts/clarendon_condensed_bold-webfont.eot');
+	src: url('../fonts/clarendon_condensed_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/clarendon_condensed_bold-webfont.woff') format('woff'), url('../fonts/clarendon_condensed_bold-webfont.ttf') format('truetype'), url('../fonts/clarendon_condensed_bold-webfont.svg#clarendon_condensedbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'clarendonbook';
+	src: url('../fonts/clarendon_book-webfont.eot');
+	src: url('../fonts/clarendon_book-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/clarendon_book-webfont.woff') format('woff'), url('../fonts/clarendon_book-webfont.ttf') format('truetype'), url('../fonts/clarendon_book-webfont.svg#clarendonbook') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'clarendonbold';
+	src: url('../fonts/clarendon_bold-webfont.eot');
+	src: url('../fonts/clarendon_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/clarendon_bold-webfont.woff') format('woff'), url('../fonts/clarendon_bold-webfont.ttf') format('truetype'), url('../fonts/clarendon_bold-webfont.svg#clarendonbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 100%;
+}
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before, .clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.clearfix:after {
+	clear: both;
+}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+ *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+/* Style adjustments for viewports that meet the condition */
+}
+ @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+* {
+	background: transparent !important;
+	color: #000 !important; /* Black prints faster: h5bp.com/s */
+	box-shadow:none !important;
+	text-shadow: none !important;
+}
+a, a:visited {
+	text-decoration: underline;
+}
+a[href]:after {
+	content: " (" attr(href) ")";
+}
+abbr[title]:after {
+	content: " (" attr(title) ")";
+}
+/*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+	content: "";
+}
+pre, blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid;
+}
+thead {
+	display: table-header-group; /* h5bp.com/t */
+}
+tr, img {
+	page-break-inside: avoid;
+}
+img {
+	max-width: 100% !important;
+}
+ @page {
+ margin: 0.5cm;
+}
+p, h2, h3 {
+	orphans: 3;
+	widows: 3;
+}
+h2, h3 {
+	page-break-after: avoid;
+}
+}

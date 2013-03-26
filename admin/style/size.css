@@ -1,0 +1,13 @@
+#products_menu {
+	color:#ffffff;
+	background-color:#292929;
+}
+#size_type_name_header, .size_type_name_field {
+	width:100px;
+}
+#size_header, .size_field {
+	margin-left:170px;
+}
+.size_type_name_field:hover {
+	opacity:0.5;
+}

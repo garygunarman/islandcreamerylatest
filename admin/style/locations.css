@@ -1,0 +1,23 @@
+#pages_menu {
+	color:#ffffff;
+	background-color:#292929;
+}
+
+/*check 50, every field+20*/
+#address_header, .address_field {
+	width:400px;
+}
+#phone_header, .phone_field {
+	width:100px;
+}
+#opening_hours_header, .opening_hours_field {
+	width:200px;
+}
+
+.title_field:hover {
+	opacity:0.5;
+}
+#title_header, .title_field {
+	margin-right:760px;
+	margin-left:50px;
+}

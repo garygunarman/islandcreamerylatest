@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+	font-family: 'solexregular_italic';
+	src: url('../../fonts/solexregularitalic-webfont.eot');
+	src: url('../../fonts/solexregularitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/solexregularitalic-webfont.woff') format('woff'), url('../../fonts/solexregularitalic-webfont.ttf') format('truetype'), url('../../fonts/solexregularitalic-webfont.svg#solexregular_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'solexregular';
+	src: url('../../fonts/solexregular-webfont.eot');
+	src: url('../../fonts/solexregular-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/solexregular-webfont.woff') format('woff'), url('../../fonts/solexregular-webfont.ttf') format('truetype'), url('../../fonts/solexregular-webfont.svg#solexregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'solexmedium_italic';
+	src: url('../../fonts/solexmediumitalic-webfont.eot');
+	src: url('../../fonts/solexmediumitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/solexmediumitalic-webfont.woff') format('woff'), url('../../fonts/solexmediumitalic-webfont.ttf') format('truetype'), url('../../fonts/solexmediumitalic-webfont.svg#solexmedium_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'solexmedium';
+	src: url('../../fonts/solexmedium-webfont.eot');
+	src: url('../../fonts/solexmedium-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/solexmedium-webfont.woff') format('woff'), url('../../fonts/solexmedium-webfont.ttf') format('truetype'), url('../../fonts/solexmedium-webfont.svg#solexmedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'solexbold_italic';
+	src: url('../../fonts/solexbolditalic-webfont.eot');
+	src: url('../../fonts/solexbolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/solexbolditalic-webfont.woff') format('woff'), url('../../fonts/solexbolditalic-webfont.ttf') format('truetype'), url('../../fonts/solexbolditalic-webfont.svg#solexbold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'solexbold';
+	src: url('../../fonts/solexbold-webfont.eot');
+	src: url('../../fonts/solexbold-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/solexbold-webfont.woff') format('woff'), url('../../fonts/solexbold-webfont.ttf') format('truetype'), url('../../fonts/solexbold-webfont.svg#solexbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'clarendon_extendedbold';
+	src: url('../../fonts/clarendonextended_bold-webfont.eot');
+	src: url('../../fonts/clarendonextended_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/clarendonextended_bold-webfont.woff') format('woff'), url('../../fonts/clarendonextended_bold-webfont.ttf') format('truetype'), url('../../fonts/clarendonextended_bold-webfont.svg#clarendon_extendedbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'clarendonbt_romancondensed';
+	src: url('../../fonts/clarendonbt_romancondensed-webfont.eot');
+	src: url('../../fonts/clarendonbt_romancondensed-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/clarendonbt_romancondensed-webfont.woff') format('woff'), url('../../fonts/clarendonbt_romancondensed-webfont.ttf') format('truetype'), url('../../fonts/clarendonbt_romancondensed-webfont.svg#webfontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'clarendonbt_roman';
+	src: url('../../fonts/clarendonbt_roman-webfont.eot');
+	src: url('../../fonts/clarendonbt_roman-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/clarendonbt_roman-webfont.woff') format('woff'), url('../../fonts/clarendonbt_roman-webfont.ttf') format('truetype'), url('../../fonts/clarendonbt_roman-webfont.svg#webfontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'claredon_light';
+	src: url('../../fonts/clarendonbt_light-webfont.eot');
+	src: url('../../fonts/clarendonbt_light-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/clarendonbt_light-webfont.woff') format('woff'), url('../../fonts/clarendonbt_light-webfont.ttf') format('truetype'), url('../../fonts/clarendonbt_light-webfont.svg#webfontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'claredon_heavy';
+	src: url('../../fonts/clarendonbt_heavy-webfont.eot');
+	src: url('../../fonts/clarendonbt_heavy-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/clarendonbt_heavy-webfont.woff') format('woff'), url('../../fonts/clarendonbt_heavy-webfont.ttf') format('truetype'), url('../../fonts/clarendonbt_heavy-webfont.svg#webfontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'claredon_boldcondensed';
+	src: url('../../fonts/clarendonbt_boldcondensed-webfont.eot');
+	src: url('../../fonts/clarendonbt_boldcondensed-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/clarendonbt_boldcondensed-webfont.woff') format('woff'), url('../../fonts/clarendonbt_boldcondensed-webfont.ttf') format('truetype'), url('../../fonts/clarendonbt_boldcondensed-webfont.svg#webfontregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'clarendon_condensedbold';
+	src: url('../../fonts/clarendon_condensed_bold-webfont.eot');
+	src: url('../../fonts/clarendon_condensed_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/clarendon_condensed_bold-webfont.woff') format('woff'), url('../../fonts/clarendon_condensed_bold-webfont.ttf') format('truetype'), url('../../fonts/clarendon_condensed_bold-webfont.svg#clarendon_condensedbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'clarendonbook';
+	src: url('../../fonts/clarendon_book-webfont.eot');
+	src: url('../../fonts/clarendon_book-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/clarendon_book-webfont.woff') format('woff'), url('../../fonts/clarendon_book-webfont.ttf') format('truetype'), url('../../fonts/clarendon_book-webfont.svg#clarendonbook') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'clarendonbold';
+	src: url('../../fonts/clarendon_bold-webfont.eot');
+	src: url('../../fonts/clarendon_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/clarendon_bold-webfont.woff') format('woff'), url('../../fonts/clarendon_bold-webfont.ttf') format('truetype'), url('../../fonts/clarendon_bold-webfont.svg#clarendonbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

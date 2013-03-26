@@ -1,0 +1,24 @@
+[04-Oct-2012 03:20:19] PHP Warning:  Cannot load module 'pdo_mysql' because required module 'pdo' is not loaded in Unknown on line 0
+[04-Oct-2012 03:20:19] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 5
+[04-Oct-2012 03:20:19] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 10
+[05-Oct-2012 02:38:46] PHP Warning:  Cannot load module 'pdo_mysql' because required module 'pdo' is not loaded in Unknown on line 0
+[05-Oct-2012 02:38:46] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 5
+[05-Oct-2012 02:38:46] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 10
+[07-Oct-2012 05:14:11] PHP Warning:  Cannot load module 'pdo_mysql' because required module 'pdo' is not loaded in Unknown on line 0
+[07-Oct-2012 05:14:12] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 5
+[07-Oct-2012 05:14:12] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 10
+[08-Oct-2012 02:44:42] PHP Warning:  Cannot load module 'pdo_mysql' because required module 'pdo' is not loaded in Unknown on line 0
+[08-Oct-2012 02:44:42] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 5
+[08-Oct-2012 02:44:42] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 10
+[09-Oct-2012 06:57:48] PHP Warning:  Cannot load module 'pdo_mysql' because required module 'pdo' is not loaded in Unknown on line 0
+[09-Oct-2012 06:57:48] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 5
+[09-Oct-2012 06:57:48] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 10
+[14-Oct-2012 05:43:01] PHP Warning:  Cannot load module 'pdo_mysql' because required module 'pdo' is not loaded in Unknown on line 0
+[14-Oct-2012 05:43:01] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 5
+[14-Oct-2012 05:43:01] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 10
+[15-Oct-2012 07:49:28] PHP Warning:  Cannot load module 'pdo_mysql' because required module 'pdo' is not loaded in Unknown on line 0
+[15-Oct-2012 07:49:28] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 5
+[15-Oct-2012 07:49:28] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 10
+[19-Oct-2012 01:48:38] PHP Warning:  Cannot load module 'pdo_mysql' because required module 'pdo' is not loaded in Unknown on line 0
+[19-Oct-2012 01:48:38] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 5
+[19-Oct-2012 01:48:38] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/richcir/public_html/fenstela.com/static/get_info.php on line 10
