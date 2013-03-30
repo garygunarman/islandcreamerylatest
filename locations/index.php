@@ -79,7 +79,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 <style type="text/css">
 #map_<?php echo $counter;?> {
-background: url(<?php echo $prefix.$filename[$counter];?>) no-repeat center; }
+background: url('<?php echo $prefix.$filename[$counter];?>') no-repeat center; }
 </style>
 
 <a href="<?php echo $maps[$counter];?>">

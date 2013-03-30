@@ -88,6 +88,16 @@ echo				'<textarea class="fill_text_area" id="address" name="address">'.$info["a
 echo			'</div>';
 echo 		'<div class="void_row"></div>';
 echo		'</div>';
+
+echo		'<div class="fill_row">';
+echo			'<div class="fill_label">Meta Data</div>';
+
+echo			'<div class="form_2_auto">';
+echo				'<textarea class="fill_text_area" id="meta" name="meta">'.$info["meta"].'</textarea>';
+
+echo			'</div>';
+echo 		'<div class="void_row"></div>';
+echo		'</div>';
 ?>
 
         <div class="void_row"></div>
